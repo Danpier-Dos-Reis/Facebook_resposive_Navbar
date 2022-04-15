@@ -1,4 +1,4 @@
-@importurl ("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -33,10 +33,62 @@ ul {
 a, li {
   margin-right: 0.82rem;
   color: white;
+  font-family: "Dosis";
 }
 
 a:hover {
   color: aqua;
+}
+
+.menu_bar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.menu_bar, #check {
+  display: none;
+}
+
+@media (max-width: 40em) {
+  .checkbtn {
+    display: block;
+  }
+
+  .menu_bar {
+    display: block;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .links ul {
+    display: block;
+    position: fixed;
+    top: 6rem;
+    left: 100%;
+    background-color: #222;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+  }
+  .links ul li {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .links ul li:last-child {
+    background-color: none;
+    padding: 1rem;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+    /*Hacemos visualizar el menu*/
+    transition: 0.35s;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
