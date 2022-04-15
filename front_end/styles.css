@@ -1,0 +1,42 @@
+@importurl ("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  width: 7rem;
+  margin-left: 2rem;
+  border-radius: 2px;
+}
+
+header {
+  background: #2c2c2c;
+  height: 6.15rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: black;
+}
+
+ul {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+a, li {
+  margin-right: 0.82rem;
+  color: white;
+}
+
+a:hover {
+  color: aqua;
+}
+
+/*# sourceMappingURL=styles.css.map */
